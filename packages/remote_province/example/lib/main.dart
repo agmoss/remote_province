@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:remote_state/remote_state.dart';
+import 'package:remote_province/remote_province.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -63,7 +64,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    var textStyle = Theme.of(context).textTheme.headline4;
+    var textStyle = Theme.of(context).textTheme.headlineMedium;
     final fabPadding = EdgeInsets.symmetric(vertical: 5.0);
 
     return Scaffold(

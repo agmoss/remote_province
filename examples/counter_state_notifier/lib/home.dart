@@ -1,7 +1,7 @@
 import 'package:counter_state_notifier/counter/notifier/counter.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:remote_state/remote_state.dart';
+import 'package:remote_province/remote_province.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

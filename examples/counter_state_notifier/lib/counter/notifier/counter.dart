@@ -1,4 +1,4 @@
-import 'package:remote_state/remote_state.dart';
+import 'package:remote_province/remote_province.dart';
 import 'package:state_notifier/state_notifier.dart';
 
 import '../clients/counter.dart';

@@ -9,8 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  remote_state:
-    path: ../../packages/remote_state
+  remote_province:
+    path: ../../packages/remote_province
   bloc: ^8.1.2
   cupertino_icons: ^1.0.6
   flutter_bloc: ^8.1.3

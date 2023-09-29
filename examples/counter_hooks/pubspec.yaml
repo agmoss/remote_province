@@ -10,8 +10,8 @@ dependencies:
   flutter_hooks: ^0.20.1
   state_notifier: ^1.0.0
   flutter_state_notifier: ^1.0.0
-  remote_state:
-    path: ../../packages/remote_state
+  remote_province:
+    path: ../../packages/remote_province
 
   flutter:
     sdk: flutter

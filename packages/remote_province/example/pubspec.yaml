@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.6
-  remote_state:
+  remote_province:
     path: ../
 
 dev_dependencies:

@@ -5,7 +5,7 @@ echo -n "Select change type and press [ENTER]:
 "
 
 PS3="Select a change type: "
-workingDirectory=./packages/remote_state
+workingDirectory=./packages/remote_province
 
 select version in minor major
 do

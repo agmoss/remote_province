@@ -1,6 +1,6 @@
-name: remote_state
+name: remote_province
 version: 2.0.0
-homepage: https://github.com/chimon2000/remote_state
+homepage: https://github.com/agmoss/remote_province
 description: Tools for mapping data from remote sources in Dart, similar to
   Elm's RemoteData.
 environment:

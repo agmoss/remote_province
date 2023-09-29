@@ -12,27 +12,27 @@ A bug is a demonstrable problem that is caused by the code in the repository. Go
 
 Guidelines for bug reports:
 
--   Ensure the bug was not already reported by searching on GitHub under [Issues][].
+- Ensure the bug was not already reported by searching on GitHub under [Issues][].
 
--   If you're unable to find an open issue addressing the problem, open a [new issue][] using the _Bug report_ template. Fill in as much relevant information as possible, adding a **code sample**, **screenshot/gif** capture, or an **executable test case** demonstrating the expected behavior that is not occurring.
+- If you're unable to find an open issue addressing the problem, open a [new issue][] using the _Bug report_ template. Fill in as much relevant information as possible, adding a **code sample**, **screenshot/gif** capture, or an **executable test case** demonstrating the expected behavior that is not occurring.
 
 ## Do you intend to add a new feature or change an existing one?
 
 Guidelines for features:
 
--   Ensure the feature request was not already reported by searching on GitHub under [Issues][].
+- Ensure the feature request was not already reported by searching on GitHub under [Issues][].
 
--   If you're unable to find an open issue addressing the problem, open a new issue using the _Feature request_ template. Fill in as much relevant information as possible.
+- If you're unable to find an open issue addressing the problem, open a new issue using the _Feature request_ template. Fill in as much relevant information as possible.
 
 ## Did you write a patch that fixes a bug or implements a feature?
 
--   Make the change in your own private [fork][] of the project.
+- Make the change in your own private [fork][] of the project.
 
--   Open a new GitHub pull request with the patch.
+- Open a new GitHub pull request with the patch.
 
--   Ensure the PR description clearly describes the problem and solution to help reviewer understand your thinking. Include the relevant issue number.
+- Ensure the PR description clearly describes the problem and solution to help reviewer understand your thinking. Include the relevant issue number.
 
--   **Provide an image / gif for reference** for major UI changes (optional). Use [Giphy capture][]
+- **Provide an image / gif for reference** for major UI changes (optional). Use [Giphy capture][]
 
 Thanks!!! 🎉🎉🎉
 

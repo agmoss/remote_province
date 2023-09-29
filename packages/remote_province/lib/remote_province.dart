@@ -1,10 +1,9 @@
-library remote_state;
+library remote_province;
 
 import 'dart:async';
-import 'package:meta/meta.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'remote_state.freezed.dart';
+part 'remote_province.freezed.dart';
 
 /// A sealed class representing fetched data and the states it can be in.
 ///

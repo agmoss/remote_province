@@ -71,18 +71,18 @@ packages:
     dependency: transitive
     description:
       name: freezed_annotation
-      sha256: cbd8c9e33672b76e06590f95151465f126182e963565dc07ccb0ffbd4899f796
+      sha256: c3fd9336eb55a38cc1bbd79ab17573113a8deccd0ecbbf926cca3c62803b5c2d
       url: "https://pub.dev"
     source: hosted
-    version: "0.14.0"
+    version: "2.4.1"
   json_annotation:
     dependency: transitive
     description:
       name: json_annotation
-      sha256: "0aab0aad3dde662cdc02d3a6fa6c9f20687a91089900bd25c64f3badcc90bf21"
+      sha256: b10a7b2ff83d83c777edba3c6a0f97045ddadd56c944e1a23a3fdf43a1bf4467
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.0"
+    version: "4.8.1"
   matcher:
     dependency: transitive
     description:
@@ -131,13 +131,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.5"
-  remote_state:
+  remote_province:
     dependency: "direct main"
     description:
-      path: "../../packages/remote_state"
+      path: "../../packages/remote_province"
       relative: true
     source: path
-    version: "2.0.0"
+    version: "2.0.1"
   sky_engine:
     dependency: transitive
     description: flutter

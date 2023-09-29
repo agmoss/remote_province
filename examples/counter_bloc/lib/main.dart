@@ -1,7 +1,7 @@
 import 'package:counter_bloc/counter/counter_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:remote_state/remote_state.dart';
+import 'package:remote_province/remote_province.dart';
 
 void main() => runApp(ExampleApp());
 

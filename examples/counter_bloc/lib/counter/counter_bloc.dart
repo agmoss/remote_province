@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:counter_bloc/counter/counter_client.dart';
-import 'package:remote_state/remote_state.dart';
+import 'package:remote_province/remote_province.dart';
 
 class CounterBloc extends Bloc<CounterEvent, RemoteState<int>> {
   var _counterClient = CounterClient();

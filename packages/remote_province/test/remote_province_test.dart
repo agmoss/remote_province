@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:remote_state/remote_state.dart';
+import 'package:remote_province/remote_province.dart';
 
 void main() {
   group('maybeWhen', () {
