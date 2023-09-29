@@ -1,14 +1,12 @@
 # RemoteState
 
-![Build & test](https://github.com/chimon2000/remote_state/workflows/Build%20&%20test/badge.svg)
-[![codecov](https://codecov.io/gh/chimon2000/remote_state/branch/master/graph/badge.svg)](https://codecov.io/gh/chimon2000/remote_state)
-[![License: MIT](https://img.shields.io/badge/license-MIT-purple.svg)](https://opensource.org/licenses/MIT)
+> `import 'package:remote_province/remote_province.dart';`
+
+> A province is a political division within a country, typically used in countries that are federal or have a federal system of government. A state, on the other hand, is a political entity that is typically sovereign and has defined geographic boundaries.
+
+[![pub package](https://img.shields.io/pub/v/remote_province.svg)](https://pub.dev/packages/remote_province)
 
 Tools for mapping data from remote sources in Dart, similar to Elm's RemoteData: https://elmprogramming.com/remote-data.html
-
-| Package                                                                            | Pub                                                                                                    |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| [remote_state](https://github.com/felangel/bloc/tree/master/packages/remote_state) | [![pub package](https://img.shields.io/pub/v/remote_state.svg)](https://pub.dev/packages/remote_state) |
 
 ## Slaying a UI Antipattern with Flutter.
 
@@ -28,11 +26,12 @@ Instead of using a complex object we use a single data type to express all possi
 
 ## Usage
 
-A common use case for RemoteState would be mapping it into a UI transition or component state. Here is an example that uses [StateNotifier](https://pub.dev/documentation/state_notifier/latest/state_notifier/StateNotifier-class.html), found in [examples/counter_state_notifier](https://github.com/chimon2000/remote_state/blob/master/examples/counter_state_notifier)
+A common use case for RemoteState would be mapping it into a UI transition or component state. Here is an example that uses [StateNotifier](https://pub.dev/documentation/state_notifier/latest/state_notifier/StateNotifier-class.html), found in [examples/counter_state_notifier](https://github.com/agmoss/remote_province/blob/master/examples/counter_state_notifier)
 
-### [counter/notifier/counter.dart](https://github.com/chimon2000/remote_state/blob/master/examples/counter_state_notifier/lib/counter/notifier/counter.dart)
+### [counter/notifier/counter.dart](https://github.com/agmoss/remote_province/blob/master/examples/counter_state_notifier/lib/counter/notifier/counter.dart)
 
 ```dart
+import 'package:remote_province/remote_province.dart';
 
 class CounterNotifier extends StateNotifier<RemoteState<int>> {
   var _counterClient = CounterClient();
@@ -58,9 +57,11 @@ class CounterNotifier extends StateNotifier<RemoteState<int>> {
 
 ```
 
-### [main.dart](https://github.com/chimon2000/remote_state/blob/master/examples/counter_state_notifier/lib/main.dart)
+### [main.dart](https://github.com/agmoss/remote_province/blob/master/examples/counter_state_notifier/lib/main.dart)
 
 ```dart
+import 'package:remote_province/remote_province.dart';
+
 class ExampleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -74,9 +75,11 @@ class ExampleApp extends StatelessWidget {
 }
 ```
 
-### [home.dart](https://github.com/chimon2000/remote_state/blob/master/examples/counter_state_notifier/lib/home.dart)
+### [home.dart](https://github.com/agmoss/remote_province/blob/master/examples/counter_state_notifier/lib/home.dart)
 
 ```dart
+import 'package:remote_province/remote_province.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({Key key}) : super(key: key);
 
@@ -203,7 +206,7 @@ The `isError` predicate returns true if we've failed to load some data.
 
 ## Maintainers
 
-- [Ryan Edge](https://github.com/chimon2000)
+- [Ryan Edge](https://github.com/agmoss)
 
 ## References
 
