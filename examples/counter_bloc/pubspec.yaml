@@ -4,17 +4,17 @@ version: 1.0.0+1
 publish_to: 'none'
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: ">=3.0.6 <4.0.0" 
 
 dependencies:
   flutter:
     sdk: flutter
   remote_state:
     path: ../../packages/remote_state
-  bloc: ^7.0.0-nullsafety.3
-  cupertino_icons: ^0.1.2
-  flutter_bloc: ^7.0.0-nullsafety.3
-  provider: ^5.0.0-nullsafety.5
+  bloc: ^8.1.2
+  cupertino_icons: ^1.0.6
+  flutter_bloc: ^8.1.3
+  provider: ^6.0.5
 
 dev_dependencies:
   flutter_test:

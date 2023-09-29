@@ -7,7 +7,7 @@
 Tools for mapping data from remote sources in Dart, similar to Elm's RemoteData: https://elmprogramming.com/remote-data.html
 
 | Package                                                                            | Pub                                                                                                    |
-|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | [remote_state](https://github.com/felangel/bloc/tree/master/packages/remote_state) | [![pub package](https://img.shields.io/pub/v/remote_state.svg)](https://pub.dev/packages/remote_state) |
 
 ## Slaying a UI Antipattern with Flutter.
@@ -20,7 +20,7 @@ You are making an API request, and you want to display or do different things ba
 
 ## Why RemoteState, not RemoteData?
 
-I gained secondary inspiration from a talk by [Jed Watson](https://twitter.com/jedwatson), [A Treatise on State](https://www.youtube.com/watch?v=tBz3UmZG_bk).  As much as possible, I try to categorize state correctly in my applications.
+I gained secondary inspiration from a talk by [Jed Watson](https://twitter.com/jedwatson), [A Treatise on State](https://www.youtube.com/watch?v=tBz3UmZG_bk). As much as possible, I try to categorize state correctly in my applications.
 
 ## The RemoteState approach
 
@@ -28,7 +28,7 @@ Instead of using a complex object we use a single data type to express all possi
 
 ## Usage
 
-A common use case for RemoteState would be mapping it into a UI transition or component state.  Here is an example that uses [StateNotifier](https://pub.dev/documentation/state_notifier/latest/state_notifier/StateNotifier-class.html), found in [examples/counter_state_notifier](https://github.com/chimon2000/remote_state/blob/master/examples/counter_state_notifier)
+A common use case for RemoteState would be mapping it into a UI transition or component state. Here is an example that uses [StateNotifier](https://pub.dev/documentation/state_notifier/latest/state_notifier/StateNotifier-class.html), found in [examples/counter_state_notifier](https://github.com/chimon2000/remote_state/blob/master/examples/counter_state_notifier)
 
 ### [counter/notifier/counter.dart](https://github.com/chimon2000/remote_state/blob/master/examples/counter_state_notifier/lib/counter/notifier/counter.dart)
 
@@ -163,7 +163,7 @@ class HomePage extends StatelessWidget {
 
 ### RemoteState.guard
 
-`RemoteState.guard` is a static function that converts a Future to RemoteState.  It will emit RemoteState.error if the future fails or RemoteState.success if the future completes.
+`RemoteState.guard` is a static function that converts a Future to RemoteState. It will emit RemoteState.error if the future fails or RemoteState.success if the future completes.
 
 ## Pattern matching high order functions
 
@@ -173,7 +173,7 @@ The `when` method is a high order function that accepts a method for each state 
 
 ### MaybeWhen
 
-The `maybeWhen` method is a high order function that accepts a method for each state and matches the request state with the appropriate callback function or a fallback callback for missing methods.  Only `orElse` is required.
+The `maybeWhen` method is a high order function that accepts a method for each state and matches the request state with the appropriate callback function or a fallback callback for missing methods. Only `orElse` is required.
 
 ### Map
 
@@ -187,19 +187,19 @@ The `maybeWhen` method is the equivalent of `when` without the destructuring.
 
 ### isInitial
 
- The `isInitial` predicate returns true if we haven't asked for data yet.
+The `isInitial` predicate returns true if we haven't asked for data yet.
 
 ### isLoading
 
- The `isLoading` predicate returns true if we're loading.
+The `isLoading` predicate returns true if we're loading.
 
 ### isSuccess
 
- The `isSuccess` predicate returns true if we've successfully loaded some data.
+The `isSuccess` predicate returns true if we've successfully loaded some data.
 
 ### isError
 
- The `isError` predicate returns true if we've failed to load some data.
+The `isError` predicate returns true if we've failed to load some data.
 
 ## Maintainers
 
