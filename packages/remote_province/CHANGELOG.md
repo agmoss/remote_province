@@ -1,154 +1,25 @@
 <a name="unreleased"></a>
-
 ## [Unreleased]
 
-<a name="v2.0.0"></a>
 
-## [v2.0.0] - 2021-03-04
-
+<a name="0.0.1"></a>
+## [0.0.1] - 2023-09-29
 ### Added
-
 - migrate examples to null safety
 - migrate to null safety
-
-### Chore
-
-- update pubspec dart versions
-
-### Fixed
-
-- update dependencies & workflow
-- version bump
-- get current version
-- use cider to manage changelog
-- meta not defined as dep
-
-<a name="v1.5.0"></a>
-
-## [v1.5.0] - 2020-12-09
-
-### Chore
-
-- update dependencies
-
-### Fixed
-
-- remove insecure links
-
-<a name="v1.4.0"></a>
-
-## [v1.4.0] - 2020-07-12
-
-### Added
-
 - update docs
 - add tests
 - add guard function
 - upgrade sdk version
-
-<a name="v1.3.0"></a>
-
-## [v1.3.0] - 2020-06-26
-
-### Fixed
-
-- added freezed_annotation back to deps
-
-<a name="v1.2.0"></a>
-
-## [v1.2.0] - 2020-06-26
-
-### Fixed
-
-- readme example
-
-<a name="v1.1.0"></a>
-
-## [v1.1.0] - 2020-06-26
-
-### Added
-
 - upgrade freezed dependency
-
-<a name="v1.0.0"></a>
-
-## [v1.0.0] - 2020-05-05
-
-### Added
-
 - add flutter_hooks example.
 - add docs for state predicates
 - updated examples
 - removed empty, added stacktrace to error, added predicates
-
-### Changed
-
-- state notifier hook per suggestions.
-
-### Documented
-
-- removed `empty` from docs
-
-### BREAKING CHANGE
-
-empty is no longer supported because it is not considered a valid remote state.
-
-<a name="v0.19.0"></a>
-
-## [v0.19.0] - 2020-04-21
-
-### Fixed
-
-- bad documentation
-
-<a name="v0.18.0"></a>
-
-## [v0.18.0] - 2020-04-21
-
-### Added
-
 - more documentation to readme
 - document public apis & hide constructors
 - readme health, usage & maintainer sections
-
-### Changed
-
-- state notifier example
-
-<a name="v0.17.0"></a>
-
-## [v0.17.0] - 2020-04-21
-
-### Added
-
 - example in packages/remote_state
-
-### Fixed
-
-- add gitignore to packages/remote_state
-
-<a name="v0.16.0"></a>
-
-## [v0.16.0] - 2020-04-21
-
-### Fixed
-
-- move changelog and add better package description
-
-<a name="v0.15.0"></a>
-
-## [v0.15.0] - 2020-04-21
-
-### Fixed
-
-- space in publish.yml
-
-<a name="v0.14.0"></a>
-
-## [v0.14.0] - 2020-04-21
-
-### Added
-
 - git-chglog configuration
 - add script to prepare release
 - add publish github action
@@ -159,7 +30,8 @@ empty is no longer supported because it is not considered a valid remote state.
 - add provider example
 
 ### Changed
-
+- state notifier hook per suggestions.
+- state notifier example
 - add name to coverage step
 - same text styles in examples
 - simplify examples
@@ -168,24 +40,40 @@ empty is no longer supported because it is not considered a valid remote state.
 - remove android & ios generated files
 - use StateNotifier instead of ValueNotifier
 
-### Fixed
+### Chore
+- Renaming the package
+- Upgrade deps and sdk, make predicates immutable
+- bump version
+- upgrade freezed deps
+- version bump
+- version bump
+- update pubspec dart versions
+- update dependencies
 
+### Documented
+- removed `empty` from docs
+
+### Fixed
+- update dependencies & workflow
+- version bump
+- get current version
+- use cider to manage changelog
+- meta not defined as dep
+- remove insecure links
+- added freezed_annotation back to deps
+- readme example
+- bad documentation
+- add gitignore to packages/remote_state
+- move changelog and add better package description
+- space in publish.yml
 - update working directory in github action
 
 ### Removed
-
 - flutter dependency remote_state package
 
-[Unreleased]: https://github.com/chimon2000/remote_state/compare/v2.0.0...HEAD
-[v2.0.0]: https://github.com/chimon2000/remote_state/compare/v1.5.0...v2.0.0
-[v1.5.0]: https://github.com/chimon2000/remote_state/compare/v1.4.0...v1.5.0
-[v1.4.0]: https://github.com/chimon2000/remote_state/compare/v1.3.0...v1.4.0
-[v1.3.0]: https://github.com/chimon2000/remote_state/compare/v1.2.0...v1.3.0
-[v1.2.0]: https://github.com/chimon2000/remote_state/compare/v1.1.0...v1.2.0
-[v1.1.0]: https://github.com/chimon2000/remote_state/compare/v1.0.0...v1.1.0
-[v1.0.0]: https://github.com/chimon2000/remote_state/compare/v0.19.0...v1.0.0
-[v0.19.0]: https://github.com/chimon2000/remote_state/compare/v0.18.0...v0.19.0
-[v0.18.0]: https://github.com/chimon2000/remote_state/compare/v0.17.0...v0.18.0
-[v0.17.0]: https://github.com/chimon2000/remote_state/compare/v0.16.0...v0.17.0
-[v0.16.0]: https://github.com/chimon2000/remote_state/compare/v0.15.0...v0.16.0
-[v0.15.0]: https://github.com/chimon2000/remote_state/compare/v0.14.0...v0.15.0
+### BREAKING CHANGE
+
+empty is no longer supported because it is not considered a valid remote state.
+
+
+[Unreleased]: https://github.com/chimon2000/remote_state/compare/0.0.1...HEAD

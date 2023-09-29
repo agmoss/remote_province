@@ -7,7 +7,7 @@ echo -n "Select change type and press [ENTER]:
 PS3="Select a change type: "
 workingDirectory=./packages/remote_province
 
-select version in minor major
+select version in minor major patch
 do
     if [ -z "${version}" ]; then
     echo "Missing or incorrect change type"
