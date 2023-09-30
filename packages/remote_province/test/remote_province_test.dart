@@ -323,6 +323,79 @@ void main() {
       expect(value, RemoteState.error(0, stack));
     });
   });
+
+  group('Wildcard functionality', () {
+    test('maybeWhen wildcard works', () {
+      var state = RemoteState.initial();
+
+      // With no matching state provided, it should call orElse function
+      expect(state.maybeWhen(orElse: () => true), true);
+
+      state = RemoteState.loading();
+
+      // With no matching state provided, it should call orElse function
+      expect(state.maybeWhen(orElse: () => true), true);
+
+      state = RemoteState.success('');
+
+      // With no matching state provided, it should call orElse function
+      expect(state.maybeWhen(orElse: () => true), true);
+
+      state = RemoteState.error('');
+
+      // With no matching state provided, it should call orElse function
+      expect(state.maybeWhen(orElse: () => true), true);
+    });
+
+    test('maybeMap wildcard works', () {
+      var state = RemoteState.initial();
+
+      // With no matching state provided, it should call orElse function
+      expect(
+          state.maybeMap(
+            orElse: () => true,
+          ),
+          true);
+
+      state = RemoteState.loading();
+
+      // With no matching state provided, it should call orElse function
+      expect(
+          state.maybeMap(
+            orElse: () => true,
+          ),
+          true);
+
+      state = RemoteState.error('err');
+
+      // With no matching state provided, it should call orElse function
+      expect(
+          state.maybeMap(
+            orElse: () => true,
+          ),
+          true);
+
+      state = RemoteState.success('success');
+
+      // With no matching state provided, it should call orElse function
+      expect(
+          state.maybeMap(
+            orElse: () => true,
+          ),
+          true);
+
+      state = RemoteState.success('This is what success looks like');
+
+      // With no matching state provided, it should call orElse function
+      expect(
+          state.maybeWhen(
+            loading: () => "It's loading",
+            success: (_) => _,
+            orElse: () => "It's not loading and not success",
+          ),
+          'This is what success looks like');
+    });
+  });
 }
 
 mapNoOp(_) {}

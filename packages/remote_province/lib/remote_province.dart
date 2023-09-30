@@ -75,7 +75,26 @@ class RemoteState<T> with _$RemoteState<T> {
     TResult Function(T value)? success,
     TResult Function(Object? error, StackTrace? stackTrace)? error,
     required TResult orElse(),
-  });
+  }) {
+    if (this is _Initial<T> && initial != null) {
+      return initial();
+    }
+
+    if (this is _Loading<T> && loading != null) {
+      return loading();
+    }
+
+    if (this is _Success<T> && success != null) {
+      return success((this as _Success<T>).value);
+    }
+
+    if (this is _Error<T> && error != null) {
+      return error((this as _Error<T>).error, (this as _Error<T>).stackTrace);
+    }
+
+    // If no case is matched, call the orElse function.
+    return orElse();
+  }
 
   /// Achieves the same result as [when] without destructuring.
   ///
@@ -118,23 +137,46 @@ class RemoteState<T> with _$RemoteState<T> {
     TResult Function(_Success<T> value)? success,
     TResult Function(_Error<T> value)? error,
     required TResult orElse(),
-  });
+  }) {
+    if (this is _Initial<T> && initial != null) {
+      return initial(this as _Initial<T>);
+    }
+
+    if (this is _Loading<T> && loading != null) {
+      return loading(this as _Loading<T>);
+    }
+
+    if (this is _Success<T> && success != null) {
+      return success(this as _Success<T>);
+    }
+
+    if (this is _Error<T> && error != null) {
+      return error(this as _Error<T>);
+    }
+
+    // If no case is matched, call the orElse function.
+    return orElse();
+  }
 
   /// State-checking predicate. Returns true if we haven't asked for data yet.
   /// Returns true only if [RemoteState] is [RemoteState.initial]
-  late final bool isInitial = maybeWhen(initial: () => true, orElse: () => false);
+  late final bool isInitial =
+      maybeWhen(initial: () => true, orElse: () => false);
 
   /// State-checking predicate. Returns true if we're loading.
   /// Returns true only if [RemoteState] is [RemoteState.loading]
-  late final bool isLoading = maybeWhen(loading: () => true, orElse: () => false);
+  late final bool isLoading =
+      maybeWhen(loading: () => true, orElse: () => false);
 
   /// State-checking predicate. Returns true if we've successfully loaded some data.
   /// Returns true only if [RemoteState] is [RemoteState.success]
-  late final bool isSuccess = maybeWhen(success: (_) => true, orElse: () => false);
+  late final bool isSuccess =
+      maybeWhen(success: (_) => true, orElse: () => false);
 
   ///  State-checking predicate. Returns true if we've failed to load some data.
   /// Returns true only if [RemoteState] is [RemoteState.error]
-  late final bool isError = maybeWhen(error: (_, __) => true, orElse: () => false);
+  late final bool isError =
+      maybeWhen(error: (_, __) => true, orElse: () => false);
 
   /// Convert a [Future] to RemoteState.
   /// Emits [RemoteState.success] if the future completes

@@ -140,6 +140,19 @@ class HomePage extends StatelessWidget {
 }
 ```
 
+
+### maybeWhen
+
+```dart
+import 'package:remote_province/remote_province.dart';
+var result = remoteState.maybeWhen(
+  initial: () => "It's initial",
+  loading: () => "It's loading",
+  // Don’t provide handlers for success and error.
+  orElse: () => "It's either success or error", // Wildcard
+);
+```
+
 ## API
 
 ### RemoteState
@@ -223,3 +236,65 @@ The `isError` predicate returns true if we've failed to load some data.
 - [Slaying a UI Antipattern in React](https://medium.com/javascript-inside/slaying-a-ui-antipattern-in-react-64a3b98242c)
 
 - [Slaying a UI Antipattern in Fantasyland](https://medium.com/javascript-inside/slaying-a-ui-antipattern-in-fantasyland-907cbc322d2a)
+
+## Dev
+
+### 1. **Fetching Dependencies**
+
+```bash
+dart pub get
+```
+
+### 2. **Running Tests**
+
+```bash
+dart test
+```
+
+### 3. **Code Generation (freezed, json_serializable, etc.)**
+
+```bash
+dart pub run build_runner build
+```
+
+For continuous rebuilding as you change the code:
+
+```bash
+dart pub run build_runner watch
+```
+
+### 4. **Code Analysis**
+
+```bash
+dart analyze
+```
+
+### 5. **Formatting Code**
+
+```bash
+dart format lib
+```
+
+### 6. **Running the Package/Application**
+
+```bash
+dart run
+```
+
+### 7. **Compiling the Package/Application**
+
+```bash
+dart compile exe <dart_file>
+```
+
+### 8. **Publishing the Package**
+
+```bash
+dart pub publish
+```
+
+### 9. **Release**
+
+```bash
+./scripts/prepare_release.sh
+```
