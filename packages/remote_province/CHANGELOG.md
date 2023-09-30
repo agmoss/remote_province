@@ -2,9 +2,10 @@
 ## [Unreleased]
 
 
-<a name="0.0.1"></a>
-## [0.0.1] - 2023-09-29
+<a name="0.1.0"></a>
+## [0.1.0] - 2023-09-30
 ### Added
+- Providing a wildcart option
 - migrate examples to null safety
 - migrate to null safety
 - update docs
@@ -41,6 +42,7 @@
 - use StateNotifier instead of ValueNotifier
 
 ### Chore
+- release
 - Renaming the package
 - Upgrade deps and sdk, make predicates immutable
 - bump version
@@ -51,6 +53,7 @@
 - update dependencies
 
 ### Documented
+- Adjusting docs
 - removed `empty` from docs
 
 ### Fixed
@@ -76,4 +79,4 @@
 empty is no longer supported because it is not considered a valid remote state.
 
 
-[Unreleased]: https://github.com/chimon2000/remote_state/compare/0.0.1...HEAD
+[Unreleased]: https://github.com/chimon2000/remote_state/compare/0.1.0...HEAD

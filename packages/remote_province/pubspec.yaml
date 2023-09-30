@@ -1,5 +1,5 @@
 name: remote_province
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/agmoss/remote_province
 description: Tools for mapping data from remote sources in Dart, similar to
   Elm's RemoteData.
